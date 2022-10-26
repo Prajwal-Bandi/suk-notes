@@ -1,0 +1,1014 @@
+<!DOCTYPE html>
+
+
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>SUK-NOTES </title>
+
+  <!-- GOOGLE FONTS -->
+  <link href="https://fonts.googleapis.com/css?family=Karla:400,700|Roboto" rel="stylesheet">
+  <link href="plugins/material/css/materialdesignicons.min.css" rel="stylesheet" />
+  <link href="plugins/simplebar/simplebar.css" rel="stylesheet" />
+
+  <!-- PLUGINS CSS STYLE -->
+  <link href="plugins/nprogress/nprogress.css" rel="stylesheet" />
+
+
+
+
+  <link href="plugins/DataTables/DataTables-1.10.18/css/jquery.dataTables.min.css" rel="stylesheet" />
+
+
+
+  <link href="plugins/jvectormap/jquery-jvectormap-2.0.3.css" rel="stylesheet" />
+
+
+
+  <link href="plugins/daterangepicker/daterangepicker.css" rel="stylesheet" />
+
+
+
+  <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
+
+
+
+  <link href="plugins/toaster/toastr.min.css" rel="stylesheet" />
+
+
+  <!-- SUK-NOTES CSS -->
+  <link id="main-css-href" rel="stylesheet" href="css/style.css" />
+
+
+
+
+  <!-- FAVICON -->
+  <link href="images/favicon.png" rel="shortcut icon" />
+
+  
+  <script src="plugins/nprogress/nprogress.js"></script>
+</head>
+
+
+<body class="navbar-fixed sidebar-fixed" id="body">
+  <script>
+    NProgress.configure({ showSpinner: false });
+    NProgress.start();
+  </script>
+
+
+  <div id="toaster"></div>
+
+
+  <!-- ====================================
+    ——— WRAPPER
+    ===================================== -->
+  <div class="wrapper">
+
+
+    <!-- ====================================
+          ——— LEFT SIDEBAR WITH OUT FOOTER
+        ===================================== -->
+    <aside class="left-sidebar sidebar-dark" id="left-sidebar">
+      <div id="sidebar" class="sidebar sidebar-with-footer">
+        <!-- Aplication Brand -->
+        <div class="app-brand">
+          <a href="/index.html">
+
+            <span class="brand-name">SUK-NOTES</span>
+          </a>
+        </div>
+        <!-- begin sidebar scrollbar -->
+        <div class="sidebar-left" data-simplebar style="height: 100%;">
+          <!-- sidebar menu -->
+          <ul class="nav sidebar-inner" id="sidebar-menu">
+
+
+
+            <li class="active">
+              <a class="sidenav-item-link" href="index.html">
+                <i class="mdi mdi-briefcase-account-outline"></i>
+                <span class="nav-text">HOME</span>
+              </a>
+            </li>
+
+
+
+
+
+            <li>
+              <a class="sidenav-item-link" href="Register.html">
+                <i class="mdi mdi-chart-line"></i>
+                <span class="nav-text">SIGN-UP</span>
+              </a>
+            </li>
+
+            <li>
+              <a class="sidenav-item-link" href="login.html">
+                <i class="mdi mdi-chart-line"></i>
+                <span class="nav-text">SIGN-IN</span>
+              </a>
+            </li>
+
+
+            <li>
+              <a class="sidenav-item-link" href="feedback.html">
+                <i class="mdi mdi-chart-line"></i>
+                <span class="nav-text">FEEDBACK</span>
+              </a>
+            </li>
+
+
+            <li>
+              <a class="sidenav-item-link" href="NOTES.html">
+                <i class="mdi mdi-account-group"></i>
+                <span class="nav-text">NOTES</span>
+              </a>
+            </li>
+
+
+            <li>
+              <a class="sidenav-item-link" href="NOTES.html">
+                <i class="mdi mdi-account-group"></i>
+                <span class="nav-text">EXAM-NOTICE</span>
+              </a>
+            </li>
+
+            <li>
+              <a class="sidenav-item-link" href="faculty.html">
+                <i class="mdi mdi-account-group"></i>
+                <span class="nav-text">FACULTY</span>
+              </a>
+            </li>
+
+
+
+
+
+
+            <li>
+              <a class="sidenav-item-link" href="calendar.html">
+                <i class="mdi mdi-calendar-check"></i>
+                <span class="nav-text">CALENDER</span>
+              </a>
+            </li>
+
+            <li>
+              <a class="sidenav-item-link" href="contact.html">
+                <i class="mdi mdi-phone"></i>
+                <span class="nav-text">CONTACT-US</span>
+              </a>
+            </li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          </ul>
+
+        </div>
+
+
+      </div>
+    </aside>
+
+
+
+    <!-- ====================================
+      ——— PAGE WRAPPER
+      ===================================== -->
+    <div class="page-wrapper">
+
+      <!-- Header -->
+      <header class="main-header" id="header">
+        <nav class="navbar navbar-expand-lg navbar-light" id="navbar">
+          <!-- Sidebar toggle button -->
+        
+          <span class="page-title">SUK-NOTES</span>
+
+          <div class="navbar-right ">
+
+            <!-- search form -->
+            <div class="search-form">
+              <form action="index.html" method="get">
+                <div class="input-group input-group-sm" id="input-group-search">
+                  <input type="text" autocomplete="off" name="query" id="search-input" class="form-control"
+                    placeholder="Search..." />
+                  <div class="input-group-append">
+                    <button class="btn" type="button">/</button>
+                  </div>
+                </div>
+              </form>
+              <ul class="dropdown-menu dropdown-menu-search">
+
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Morbi leo risus</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Dapibus ac facilisis in</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Porta ac consectetur ac</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Vestibulum at eros</a>
+                </li>
+
+              </ul>
+
+            </div>
+
+            <ul class="nav navbar-nav">
+              <!-- Offcanvas -->
+
+
+
+          </div>
+        </nav>
+
+      </header>
+
+      <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./images/gallery/gallery4.jpg" class="d-block w-100" alt="...">
+
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+
+        <!-- ====================================
+        ——— CONTENT WRAPPER
+        ===================================== -->
+        <div class="content-wrapper">
+          <div class="content">
+            <!-- Top Statistics -->
+            <div class="row">
+              <div class="col-xl-3 col-sm-6">
+                <div class="card card-default card-mini">
+                  <div class="card-header"><BR><BR>
+                    <h3><a href="Register.html">REGISTER</a></h3><br>
+                    <h3><a href="NOTES.html">NOTES</a></h3>
+                    <div class="dropdown">
+
+                    </div>
+                    <div class="sub-title">
+                      <span class="mr-1"> </span>
+
+
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <div class="chart-wrapper">
+                      <div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 col-sm-6">
+                <div class="card card-default card-mini">
+                  <div class="card-header"><BR><BR>
+                    <h3><a href="login.html">LOGIN</a></h3>
+                    <div class="dropdown">
+
+                    </div>
+                    <div class="sub-title">
+                      <span class="mr-1"> </span>
+
+
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <div class="chart-wrapper">
+                      <div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 col-sm-6">
+                <div class="card card-default card-mini">
+                  <div class="card-header"><BR><BR>
+                    <h3><a href="feedback.html">FEEDBACK</a></h3>
+                    <div class="dropdown">
+
+                    </div>
+                    <div class="sub-title">
+                      <span class="mr-1"> </span>
+
+
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <div class="chart-wrapper">
+                      <div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 col-sm-6">
+                <div class="card card-default card-mini">
+                  <div class="card-header"><BR><BR>
+                    <h3><a href="contact.html">CONTACT</a></h3>
+                    <div class="dropdown">
+
+                    </div>
+                    <div class="sub-title">
+                      <span class="mr-1"></span>
+
+
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <div class="chart-wrapper">
+                      <div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+
+            <div class="row">
+              <div class="col-xl-8">
+
+
+                <div class="card card-default">
+                  <div class="card-header">
+                    <h2>ABOUT</h2>
+                    <div class="dropdown">
+                      <p> Hey there Folks , this is your Admin here @NOTES Developer . The purpose of the Blog is to
+                        help everyone During their
+                        Exams as we all know that after this peak period of covid we all have become lazy due to these
+                        online classes so right n
+                        ow it isn’t so We need to study something right ?? So here we are to help you all with the notes
+                        of respective Branches and
+                        according to their respective Semesters with the availability of notes as well as Practice
+                        Sheets and with syllabus sheets of
+                        Respective Modules ! We the NOTES hope that every student gets benefit from this Blog . This
+                        Website was not created to earn money
+                        or any source of income because we follow one simple rule from Our god Sharanabasvaveshwar :
+                        “Vasudeva Kudumbakam (The world is one family )
+                        and we the NOTES follow a simple rule “Service Through Humanity” we Hope all the Future
+                        Engineers of our university gets benefit from this and
+                        follow a simple motto – “Sakala Jeevathmarige Lesane Bayasuva” (Wishing the worldly good and
+                        betterment of all the living beings) If you face any
+                        Problems or Bugs in this Website please do contact us frankly through our contact us section and
+                        you can email us your Problems a
+                        nd Bugs anytime and we assure that the response to your email or messages would be responded
+                        very soon ! That’s all Folks…….</p>
+                      </a>
+
+
+                    </div>
+
+                  </div>
+                  <div class="card-body">
+
+
+                  </div>
+
+                </div>
+
+
+              </div>
+              <div class="col-xl-4">
+                <!-- Current Users  -->
+
+
+                <div class="card-body">
+                  <iframe class="d-block w-100" src="../theme/images/gallery/ABOUT.mp4" width="900px" height="400px">
+
+                  </iframe>
+                </div>
+              </div>
+            </div>
+
+
+
+
+
+            <!-- Table Product -->
+
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <iframe class="d-block w-100"
+                    src="../theme/images/gallery/sharanbasveshwar_samsthan-20221018-0001.mp4" width="900px"
+                    height="400px"></iframe>
+
+                </div>
+
+              </div>
+            </div>
+            <BR>
+
+
+            <div class="row">
+              <div class="col-xl-4">
+                <!-- Top Customers -->
+                <div class="card card-default">
+                  <div class="card-header">
+                    <h2>COURSES AVAILABLE</h2>
+                  </div>
+                  <div class="card-body">
+                    <table class="table table-borderless table-thead-border">
+                      <thead>
+                        <tr>
+                          <th>COURSE NAME</th>
+                          <th class="text-right">FEES</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="text-dark font-weight-bold">COMPUTER SCIENCE & ENGINEERING</td>
+                          <td class="text-right">$2,560</td>
+                        </tr>
+                        <tr>
+                          <td class="text-dark font-weight-bold">ELECTRICAL & ELECTRONICS ENGINEERING
+                          <td class="text-right">$1,720</td>
+                        </tr>
+                        <tr>
+                          <td class="text-dark font-weight-bold">ELECTRONICS & COMMUNICATION ENGINEERING</td>
+                          <td class="text-right">$1,230</td>
+                        </tr>
+                        <tr>
+                          <td class="text-dark font-weight-bold">CIVIL ENGINEERING</td>
+                          <td class="text-right">$875</td>
+                        </tr>
+                        <tr>
+                          <td class="text-dark font-weight-bold">MECHANICAL ENGINEERING</td>
+                          <td class="text-right">$875</td>
+                        </tr>
+                        <tr>
+                          <td class="text-dark font-weight-bold">ENERGY ENGINEERING</td>
+                          <td class="text-right">$875</td>
+                        </tr>
+                      </tbody>
+
+                    </table>
+                  </div>
+                </div>
+
+              </div>
+              <div class="col-xl-8">
+                <div class="card card-default">
+                  <div class="card-header">
+
+
+                  </div>
+                  <div class="card-body py-0">
+                    <div class="row pb-4">
+                      <div class="col-lg-7 border-right-lg">
+
+                        <iframe class="d-block w-100" src="../theme/images/gallery/ABOUT.mp4" width="1500px"
+                          height="400px"></iframe>
+
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-xl-8">
+
+              <!-- Sales by Product -->
+              <div class="card card-default">
+                <div class="card-header align-items-center">
+
+
+                </div>
+                <div class="card-body">
+                  <div class="tab-content">
+                    <table id="product-sale" class="table table-product " style="width:100%">
+
+                      <tbody>
+                        <iframe class="d-block w-100" src="../theme/images/gallery/vedio1.mp4" width="500px"
+                          height="300px"></iframe>
+
+
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="col-xl-4">
+
+              <!-- Chat -->
+              <div class="card card-default chat">
+                <div class="card-header">
+                  <h2>Selena Wagner</h2>
+                  <div class="dropdown dropdown-chat-state">
+                    <button class="dropdown-toggle btn btn-primary btn-rounded-circle" type="button"
+                      id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                      data-display="static">
+                      <i class="mdi mdi-account-alert"></i>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                      <li>
+                        <a href="#" class="user-link">
+                          <img src="images/user/user-sm-01.jpg" alt="User Image">
+                          <span class="username">anna patuary
+                            <span class="badge badge-secondary">18</span>
+                          </span>
+                          <span class="state active">
+                            <i class="mdi mdi-circle-medium"></i>
+                          </span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="user-link">
+                          <img src="images/user/user-sm-02.jpg" alt="User Image">
+                          <span class="username">riman Ghose
+                            <span class="badge badge-secondary">18</span>
+                          </span>
+                          <span class="state">
+                            1hrs
+                          </span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="user-link">
+                          <img src="images/user/user-sm-03.jpg" alt="User Image">
+                          <span class="username">riman Ghose
+                            <span class="badge badge-secondary">18</span>
+                          </span>
+                          <span class="state">
+                            1hrs
+                          </span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="user-link">
+                          <img src="images/user/user-sm-04.jpg" alt="User Image">
+                          <span class="username">riman Ghose
+                            <span class="badge badge-secondary">18</span>
+                          </span>
+                          <span class="state">
+                            1hrs
+                          </span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="user-link">
+                          <img src="images/user/user-sm-05.jpg" alt="User Image">
+                          <span class="username">riman Ghose</span>
+                          <span class="state">15min</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="card-body pb-0" data-simplebar style="height: 363px;">
+                  <!-- Media Chat Left -->
+                  <div class="media media-chat">
+                    <img src="images/user/user-sm-01.jpg" class="rounded-circle" alt="Avata Image">
+                    <div class="media-body">
+                      <div class="text-content">
+                        <span class="message">Hello my name is anna.</span>
+                        <time class="time">5 mins ago</time>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Media Chat Right -->
+                  <div class="media media-chat media-chat-right">
+                    <div class="media-body">
+                      <div class="text-content">
+                        <span class="message">Hello i am Riman.</span>
+                        <time class="time">4 mins ago</time>
+                      </div>
+                      <div class="text-content">
+                        <span class="message">I want to know about yourself</span>
+                        <time class="time">3 mins ago</time>
+                      </div>
+                    </div>
+                    <img src="images/user/user-sm-02.jpg" class="rounded-circle" alt="Avata Image">
+                  </div>
+
+                  <!-- Media Chat Left -->
+                  <div class="media media-chat">
+                    <img src="images/user/user-sm-01.jpg" class="rounded-circle" alt="Avata Image">
+                    <div class="media-body">
+                      <div class="text-content">
+                        <span class="message">Its had resolving otherwise she contented therefore.</span>
+                        <time class="time">1 mins ago</time>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-footer">
+                  <form>
+                    <div class="input-group input-group-chat">
+                      <div class="input-group-prepend">
+                        <span class="emoticon-icon mdi mdi-emoticon-happy-outline"></span>
+                      </div>
+                      <input type="text" class="form-control" aria-label="Text input with dropdown button">
+                    </div>
+                  </form>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Stock Modal -->
+          <div class="modal fade modal-stock" id="modal-stock" aria-labelledby="modal-stock" aria-hidden="true">
+            <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+              <form action="#">
+                <div class="modal-content">
+                  <div class="modal-header align-items-center p3 p-md-5">
+                    <h2 class="modal-title" id="exampleModalGridTitle">Add Stock</h2>
+                    <div>
+                      <button type="button" class="btn btn-light btn-pill mr-1 mr-md-2" data-dismiss="modal"> cancel
+                      </button>
+                      <button type="submit" class="btn btn-primary  btn-pill" data-dismiss="modal"> save </button>
+                    </div>
+
+                  </div>
+                  <div class="modal-body p3 p-md-5">
+                    <div class="row">
+                      <div class="col-lg-8">
+                        <h3 class="h5 mb-5">Product Information</h3>
+                        <div class="form-group mb-5">
+                          <label for="new-product">Product Title</label>
+                          <input type="text" class="form-control" id="new-product" placeholder="Add Product">
+                        </div>
+                        <div class="form-row mb-4">
+                          <div class="col">
+                            <label for="price">Price</label>
+                            <div class="input-group">
+                              <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1">$</span>
+                              </div>
+                              <input type="text" class="form-control" id="price" placeholder="Price" aria-label="Price"
+                                aria-describedby="basic-addon1">
+                            </div>
+                          </div>
+                          <div class="col">
+                            <label for="sale-price">Sale Price</label>
+                            <div class="input-group">
+                              <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1">$</span>
+                              </div>
+                              <input type="text" class="form-control" id="sale-price" placeholder="Sale Price"
+                                aria-label="SalePrice" aria-describedby="basic-addon1">
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="product-type mb-3 ">
+                          <label class="d-block" for="sale-price">Product Type <i
+                              class="mdi mdi-help-circle-outline"></i> </label>
+                          <div>
+
+                            <div class="custom-control custom-radio d-inline-block mr-3 mb-3">
+                              <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input"
+                                checked="checked">
+                              <label class="custom-control-label" for="customRadio1">Physical Good</label>
+                            </div>
+
+                            <div class="custom-control custom-radio d-inline-block mr-3 mb-3">
+                              <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                              <label class="custom-control-label" for="customRadio2">Digital Good</label>
+                            </div>
+
+                            <div class="custom-control custom-radio d-inline-block mr-3 mb-3">
+                              <input type="radio" id="customRadio3" name="customRadio" class="custom-control-input">
+                              <label class="custom-control-label" for="customRadio3">Service</label>
+                            </div>
+
+                          </div>
+                        </div>
+
+                        <div class="editor">
+                          <label class="d-block" for="sale-price">Description <i
+                              class="mdi mdi-help-circle-outline"></i></label>
+                          <div id="standalone">
+                            <div id="toolbar">
+                              <span class="ql-formats">
+                                <select class="ql-font"></select>
+                                <select class="ql-size"></select>
+                              </span>
+                              <span class="ql-formats">
+                                <button class="ql-bold"></button>
+                                <button class="ql-italic"></button>
+                                <button class="ql-underline"></button>
+                              </span>
+                              <span class="ql-formats">
+                                <select class="ql-color"></select>
+                              </span>
+                              <span class="ql-formats">
+                                <button class="ql-blockquote"></button>
+                              </span>
+                              <span class="ql-formats">
+                                <button class="ql-list" value="ordered"></button>
+                                <button class="ql-list" value="bullet"></button>
+                                <button class="ql-indent" value="-1"></button>
+                                <button class="ql-indent" value="+1"></button>
+                              </span>
+                              <span class="ql-formats">
+                                <button class="ql-direction" value="rtl"></button>
+                                <select class="ql-align"></select>
+                              </span>
+                            </div>
+                          </div>
+                          <div id="editor"></div>
+
+                          <div class="custom-control custom-checkbox d-inline-block mt-2">
+                            <input type="checkbox" class="custom-control-input" id="customCheck2">
+                            <label class="custom-control-label" for="customCheck2">Hide product from published
+                              site</label>
+                          </div>
+
+                        </div>
+
+                      </div>
+                      <div class="col-lg-4">
+                        <div class="custom-file">
+                          <input type="file" class="custom-file-input" id="customFile" placeholder="please imgae here">
+                          <span class="upload-image">Click here to <span class="text-primary">add product image.</span>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="row">
+
+        <div class="col-md-12 col-lg-6 col-xl-3">
+
+          <img class="card-img-top" src="./images/gallery/appa.jpg" width="300px" height="300px">
+
+        </div>
+        <br>
+        <div class="col-md-12 col-lg-6 col-xl-3">
+
+          <img class="card-img-top" src="./images/gallery/avva.jpg" width="300px" height="300px">
+
+
+        </div>
+        <br>
+
+        <div class="col-md-12 col-lg-6 col-xl-3">
+
+          <img class="card-img-top" src="./images/gallery/president5.jpg" width="300px" height="300px">
+
+
+        </div>
+        <br>
+        <div class="col-md-12 col-lg-6 col-xl-3">
+
+          <img class="card-img-top" src="./images/gallery/president6.jpg" width="300px" height="300px">
+
+        </div>
+
+
+      </div>
+      <br><br>
+
+      <!-- Footer -->
+      <footer class="footer mt-auto">
+        <div class="copyright bg-white">
+          <p>
+            &copy; <span id="copy-year"></span> SUK-NOTES Designed by <a class="text-primary"
+              target="_blank">PRAJWAL-BANDI</a>.
+          </p>
+        </div>
+        <script>
+          var d = new Date();
+          var year = d.getFullYear();
+          document.getElementById("copy-year").innerHTML = year;
+        </script>
+      </footer>
+
+    </div>
+  </div>
+
+  <!-- Card Offcanvas -->
+  <div class="card card-offcanvas" id="contact-off">
+    <div class="card-header">
+      <h2>Contacts</h2>
+      <a href="#" class="btn btn-primary btn-pill px-4">Add New</a>
+    </div>
+    <div class="card-body">
+
+      <div class="mb-4">
+        <input type="text" class="form-control form-control-lg form-control-secondary rounded-0"
+          placeholder="Search contacts...">
+      </div>
+
+      <div class="media media-sm">
+        <div class="media-sm-wrapper">
+          <a href="user-profile.html">
+            <img src="images/user/user-sm-01.jpg" alt="User Image">
+            <span class="active bg-primary"></span>
+          </a>
+        </div>
+        <div class="media-body">
+          <a href="user-profile.html">
+            <span class="title">Selena Wagner</span>
+            <span class="discribe">Designer</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="media media-sm">
+        <div class="media-sm-wrapper">
+          <a href="user-profile.html">
+            <img src="images/user/user-sm-02.jpg" alt="User Image">
+            <span class="active bg-primary"></span>
+          </a>
+        </div>
+        <div class="media-body">
+          <a href="user-profile.html">
+            <span class="title">Walter Reuter</span>
+            <span>Developer</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="media media-sm">
+        <div class="media-sm-wrapper">
+          <a href="user-profile.html">
+            <img src="images/user/user-sm-03.jpg" alt="User Image">
+          </a>
+        </div>
+        <div class="media-body">
+          <a href="user-profile.html">
+            <span class="title">Larissa Gebhardt</span>
+            <span>Cyber Punk</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="media media-sm">
+        <div class="media-sm-wrapper">
+          <a href="user-profile.html">
+            <img src="images/user/user-sm-04.jpg" alt="User Image">
+          </a>
+
+        </div>
+        <div class="media-body">
+          <a href="user-profile.html">
+            <span class="title">Albrecht Straub</span>
+            <span>Photographer</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="media media-sm">
+        <div class="media-sm-wrapper">
+          <a href="user-profile.html">
+            <img src="images/user/user-sm-05.jpg" alt="User Image">
+            <span class="active bg-danger"></span>
+          </a>
+        </div>
+        <div class="media-body">
+          <a href="user-profile.html">
+            <span class="title">Leopold Ebert</span>
+            <span>Fashion Designer</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="media media-sm">
+        <div class="media-sm-wrapper">
+          <a href="user-profile.html">
+            <img src="images/user/user-sm-06.jpg" alt="User Image">
+            <span class="active bg-primary"></span>
+          </a>
+        </div>
+        <div class="media-body">
+          <a href="user-profile.html">
+            <span class="title">Selena Wagner</span>
+            <span>Photographer</span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+
+
+  <script src="plugins/jquery/jquery.min.js"></script>
+  <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="plugins/simplebar/simplebar.min.js"></script>
+  <script src="https://unpkg.com/hotkeys-js/dist/hotkeys.min.js"></script>
+
+
+
+  <script src="plugins/apexcharts/apexcharts.js"></script>
+
+
+
+  <script src="plugins/DataTables/DataTables-1.10.18/js/jquery.dataTables.min.js"></script>
+
+
+
+  <script src="plugins/jvectormap/jquery-jvectormap-2.0.3.min.js"></script>
+  <script src="plugins/jvectormap/jquery-jvectormap-world-mill.js"></script>
+  <script src="plugins/jvectormap/jquery-jvectormap-us-aea.js"></script>
+
+
+
+  <script src="plugins/daterangepicker/moment.min.js"></script>
+  <script src="plugins/daterangepicker/daterangepicker.js"></script>
+  <script>
+    jQuery(document).ready(function () {
+      jQuery('input[name="dateRange"]').daterangepicker({
+        autoUpdateInput: false,
+        singleDatePicker: true,
+        locale: {
+          cancelLabel: 'Clear'
+        }
+      });
+      jQuery('input[name="dateRange"]').on('apply.daterangepicker', function (ev, picker) {
+        jQuery(this).val(picker.startDate.format('MM/DD/YYYY'));
+      });
+      jQuery('input[name="dateRange"]').on('cancel.daterangepicker', function (ev, picker) {
+        jQuery(this).val('');
+      });
+    });
+  </script>
+
+
+
+  <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
+
+
+
+  <script src="plugins/toaster/toastr.min.js"></script>
+
+
+
+  <script src="js/SUK-NOTES.js"></script>
+  <script src="js/chart.js"></script>
+  <script src="js/map.js"></script>
+  <script src="js/custom.js"></script>
+
+
+
+
+  <!--  -->
+
+
+</body>
+
+</html>
